@@ -1,6 +1,6 @@
 node {
     stage('git clone') {
-        git 'https://github.com/231p0w0q132/jenkinsTest.git'
+        git branch: 'main', url: 'https://github.com/231p0w0q132/jenkinsTest.git'
     }
     stage('Test') {
         echo 'Testing....'
